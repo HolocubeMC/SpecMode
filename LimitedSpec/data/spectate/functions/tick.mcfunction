@@ -20,5 +20,5 @@ scoreboard players operation @p[scores={sp_id=0}] sp_id = sp_curr_id sp_id
 
 #Force radius
 scoreboard players set @r[scores={sp_status=1}] sp_selector 1
-execute as @e[type=minecraft:armor_stand,tag=sp_dummy_stand] at @s run execute if score @r[scores={sp_selector=1},distance=64..] sp_id = @s sp_id run tp @a[scores={sp_selector=1},distance=64..] @s
+execute as @e[type=minecraft:armor_stand,tag=sp_dummy_stand] at @s run execute if score @r[scores={sp_selector=1},distance=32..] sp_id = @s sp_id run tp @a[scores={sp_selector=1},distance=32..] @s
 scoreboard players reset @a sp_selector
